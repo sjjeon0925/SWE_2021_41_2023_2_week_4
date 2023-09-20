@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for U in {A..Z}; do
+    mv ./files/"$U"*.txt "./${U,,}/"
+done
+
+for l in {a..z}; do
+    mv ./files/"$l"*.txt "./$l/"
+done
